@@ -64,7 +64,7 @@ def env_response(self, messages: List[Dict[str, str]], **kwargs: Any) -> Dict[st
 
 ## Citation
 
-If you use this code in your research, please cite:
+The code is built upon the work of William Brown who deserves all the credit. If you use this code in your research, please cite:
 
 ```bibtex
 @article{brown2025verifiers,
