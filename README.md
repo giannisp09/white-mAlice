@@ -12,7 +12,7 @@ This repository contains a set of tools for reinforcement learning with LLMs in 
 PyPI [coming soon](https://pypi.org/project/verifiers/), for now just do:
 ```bash
 git clone https://github.com/giannisp09/white-mAlice.git
-cd verifiers
+cd white-mAlice
 uv sync
 uv pip install flash-attn --no-build-isolation
 source .venv/bin/activate
