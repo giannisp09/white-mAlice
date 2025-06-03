@@ -24,6 +24,17 @@ dependencies = [
     "transformers",
 ]
 
+[project.optional-dependencies]
+all = [
+    "ipykernel",
+    "ipywidgets",
+    "duckduckgo-search",
+    "brave-search",
+    "reasoning-gym",
+    "smolagents>=1.15.0",
+]
+
+
 [project.scripts]
 vf-vllm = "verifiers.inference.vllm_server:cli_main"
 
