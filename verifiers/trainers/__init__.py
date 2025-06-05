@@ -1,3 +1,3 @@
-from .grpo_trainer import GRPOTrainer
+from .grpo_trainer import GRPOTrainer, GRPOEnvTrainer
 
-__all__ = ["GRPOTrainer"]
+__all__ = ["GRPOTrainer", "GRPOEnvTrainer"]
