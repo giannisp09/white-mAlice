@@ -31,6 +31,11 @@ RL environments and algorithms should be modular, reusable, and hackable.
 	- `ReasoningGymEnv` -- direct training for any [reasoning-gym](https://github.com/open-thought/reasoning-gym/tree/main/reasoning_gym) task.
 	- `Environment` abstract class for implementing whatever rollout logic you can imagine (go nuts!)
 
+Remember to set OPENAI api key (even random) to avoid errors:
+```bash
+export OPENAI_API_KEY=sk-1234
+```
+
 Basic usage for a GRPO training script with 4 GPUs (2 inference + 2 training):
 
 ```bash
@@ -45,7 +50,7 @@ See [GRPO Rules of Thumb](#grpo-rules-of-thumb) for further discussion of hyperp
 
 ### Citation
 
-If you use this code in your research, please cite:
+The code is based on the work  William Brown. So all the credits go to him. If you use this code in your research, please cite:
 
 ```bibtex
 @article{brown2025verifiers,
