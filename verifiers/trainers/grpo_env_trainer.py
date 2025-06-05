@@ -25,7 +25,18 @@ trl.extras.vllm_client.VLLMClient = VLLMClient
 
 from trl import GRPOTrainer, GRPOConfig
 from trl.data_utils import maybe_apply_chat_template
-from trl.import_utils import is_rich_available
+# Handle missing is_rich_available gracefully
+try:
+    from trl.import_utils import is_rich_available
+except ImportError:
+    # Fallback if is_rich_available is not available
+    def is_rich_available():
+        try:
+            import rich
+            return True
+        except ImportError:
+            return False
+
 from trl.trainer.utils import pad
 
 if is_wandb_available():
