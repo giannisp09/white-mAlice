@@ -6,6 +6,7 @@ from .codemath_rubric import CodeMathRubric
 from .tool_rubric import ToolRubric
 from .smola_tool_rubric import SmolaToolRubric
 from .codepentest_rubric import CodePentestRubric
+from .pentest_rubric import PentestRubric
 
 __all__ = [
     "Rubric",
@@ -15,5 +16,6 @@ __all__ = [
     "CodeMathRubric",
     "ToolRubric",
     "SmolaToolRubric",
-    "CodePentestRubric"
+    "CodePentestRubric",
+    "PentestRubric"
 ]

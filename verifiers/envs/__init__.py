@@ -8,6 +8,7 @@ from .doublecheck_env import DoubleCheckEnv
 from .reasoninggym_env import ReasoningGymEnv
 from .tool_env import ToolEnv
 from .smola_tool_env import SmolaToolEnv
+from .pentest_env import PentestEnv
 
 __all__ = [
     'Environment',
@@ -18,4 +19,5 @@ __all__ = [
     'ReasoningGymEnv',
     'ToolEnv',
     'SmolaToolEnv',
+    'PentestEnv',
 ]
